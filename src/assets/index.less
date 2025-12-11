@@ -1,0 +1,37 @@
+@font-family-h: 'DotGothic16', sans-serif;
+@font-family-t: 'Poppins', sans-serif;
+@header-machine-color: #0066CC;
+@machine-container-color: rgba(255, 255, 255, 0.8);
+@button-color: #0066CC;
+@button-hover-color: rgba(255, 255, 255, 0.8);
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-family-t;
+
+    //Layout
+    width: 100vw;
+    height: 100vh;
+
+    //Display
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    font-family: @font-family-h;
+    font-size: 6rem;
+    letter-spacing: .2rem;
+    color: @machine-container-color
+}
+
+@import './machine.less';
+@import './distribution/header.less';
+@import './distribution/output.less';
+@import './distribution/products.less';
+@import './distribution/bill.less';
+@import './components/items.less';

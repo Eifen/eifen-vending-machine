@@ -1,0 +1,54 @@
+.output {
+    padding: 2rem;
+
+    &-product {
+        background: @machine-container-color;
+        border-radius: .5rem;
+        text-align: center;
+        height: 2rem;
+        position: relative;
+    }
+
+    &-distribution {
+
+
+        & div {
+            padding: 0;
+            position: absolute;
+            font-size: 50%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            font-weight: 700;
+            color: @button-color;
+            font-family: @font-family-h;
+        }
+
+        & img {
+            width: 100%;
+            box-sizing: border-box;
+            height: 0px;
+            object-fit: contain;
+            position: absolute;
+            transition: height .3s ease-in-out;
+            top: 10px;
+            left: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.show-buy {
+    animation: rolldown 1s ease-in forwards;
+}
+
+@keyframes rolldown {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 100px;
+    }
+}

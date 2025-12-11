@@ -1,0 +1,28 @@
+.header {
+    font: 700 2rem @font-family-h;
+    background: @header-machine-color;
+    letter-spacing: 0.2rem;
+    overflow: hidden;
+
+    //Display
+    display: flex;
+    justify-content: center;
+
+    & span {
+        animation: titleinter 10.3s linear alternate;
+    }
+}
+
+@keyframes titleinter {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

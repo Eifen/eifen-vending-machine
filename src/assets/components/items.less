@@ -1,0 +1,38 @@
+.items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+    justify-items: center;
+    background: @machine-container-color;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #5D5D5D;
+    border-radius: .5rem;
+
+    &-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+
+        & img {
+            align-self: center;
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+        }
+    }
+
+    &-command {
+        width: 100%;
+        box-sizing: border-box;
+        padding: .375rem;
+        border-top: solid 1px #5D5D5D;
+        font-size: 62.5%;
+        text-align: center;
+        font-weight: 700;
+    }
+}

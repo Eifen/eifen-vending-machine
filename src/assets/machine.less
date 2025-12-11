@@ -1,0 +1,37 @@
+.machine-container {
+    width: min(calc(100vw - 2rem), 30rem);
+    height: 40rem;
+    display: grid;
+    grid-template-areas: "header header"
+        "products bill"
+        "output bill";
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr 30%;
+    border: solid 1rem @machine-container-color;
+    border-radius: .5rem;
+    background: #5D5D5D;
+
+    & * {
+        padding: .5rem;
+    }
+
+    &-header {
+        grid-area: header;
+        .header();
+    }
+
+    &-products {
+        grid-area: products;
+        .products();
+    }
+
+    &-bill {
+        grid-area: bill;
+        .bill();
+    }
+
+    &-output {
+        grid-area: output;
+        .output();
+    }
+}
